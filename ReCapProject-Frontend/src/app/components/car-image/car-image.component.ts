@@ -17,7 +17,6 @@ export class CarImageComponent implements OnInit {
     this.activetedRoot.params.subscribe((params) => {
       if(params["carId"]) {
         this.getCarImagesByCarId(params["carId"])
-        console.log(this.carImages)
       }
       else {
         this.getCarImages()
